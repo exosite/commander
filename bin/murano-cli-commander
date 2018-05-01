@@ -3,7 +3,7 @@
 require 'rubygems'
 require 'commander/import'
 
-program :name, 'commander'
+program :name, 'murano-cli-commander'
 program :version, Commander::VERSION
 program :description, 'Commander utility program.'
 
