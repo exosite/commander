@@ -69,14 +69,14 @@ describe Commander do
 
     it 'should pass arguments passed to the alias when called' do
       gem_name = ''
-      new_command_runner 'install', 'gem', 'commander' do
+      new_command_runner 'install', 'gem', 'murano-cli-commander' do
         command :install do |c|
           c.option '--gem-name NAME', 'Install a gem'
           c.when_called { |_, options| gem_name = options.gem_name }
         end
         alias_command :'install gem', :install, '--gem-name'
       end.run!
-      expect(gem_name).to eq('commander')
+      expect(gem_name).to eq('murano-cli-commander')
     end
   end
 

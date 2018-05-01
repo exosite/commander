@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'commander/configure'
+require 'murano-cli-commander/configure'
 
 describe Commander do
   describe '.configure' do

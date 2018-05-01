@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'commander/methods'
+require 'murano-cli-commander/methods'
 
 describe Commander::Methods do
   it 'includes Commander::UI' do

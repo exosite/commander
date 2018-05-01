@@ -8,10 +8,10 @@ end
 # Unshift so that local files load instead of something in gems
 $LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib'
 
-# This basically replicates the behavior of `require 'commander/import'`
+# This basically replicates the behavior of `require 'murano-cli-commander/import'`
 # but without adding an `at_exit` hook, which interferes with exit code
-require 'commander'
-require 'commander/methods'
+require 'murano-cli-commander'
+require 'murano-cli-commander/methods'
 
 # Mock terminal IO streams so we can spec against them
 

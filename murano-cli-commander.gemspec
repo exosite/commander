@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 $LOAD_PATH.push File.expand_path('../lib', __FILE__)
-require 'commander/version'
+require 'murano-cli-commander/version'
 
 Gem::Specification.new do |s|
   s.name        = 'murano-cli-commander'

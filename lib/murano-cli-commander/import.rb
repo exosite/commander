@@ -1,4 +1,4 @@
-require 'commander'
+require 'murano-cli-commander'
 
 include Commander::Methods
 

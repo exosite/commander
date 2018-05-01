@@ -1,2 +1,2 @@
-require 'commander/core_ext/array'
-require 'commander/core_ext/object'
+require 'murano-cli-commander/core_ext/array'
+require 'murano-cli-commander/core_ext/object'

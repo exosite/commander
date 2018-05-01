@@ -257,7 +257,7 @@ module Commander
 
     def ask_editor(input = nil, preferred_editor = nil)
       editor = available_editor preferred_editor
-      program = Commander::Runner.instance.program(:name).downcase rescue 'commander'
+      program = Commander::Runner.instance.program(:name).downcase rescue 'murano-cli-commander'
       tmpfile = Tempfile.new program
       begin
         tmpfile.write input if input

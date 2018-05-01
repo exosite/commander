@@ -12,4 +12,4 @@ To push the new version to Rubygems:
 
   $ rake release
   
-(http://rubygems.org/gems/commander)
+(http://rubygems.org/gems/murano-cli-commander)
