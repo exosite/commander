@@ -341,7 +341,8 @@ module Commander
 
         past_switch, arg_removed = false, false
         args.delete_if do |arg|
-          if switches.any? { |s| s[0, arg.length] == arg }
+          # (lb): If arg is '', this any? block matches the first one it checks.
+          if !arg.empty? && switches.any? { |s| s[0, arg.length] == arg }
             arg_removed = !switch_has_arg
             past_switch = true
           elsif past_switch && !arg_removed && arg !~ /^-/
