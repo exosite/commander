@@ -1,3 +1,9 @@
+=== 4.4.10 / 2018-08-06
+
+* Fork: Add support for empty args.
+
+  [Missing intermediate gem versions because cannot republish previously published versions.]
+
 === 4.4.6 / 2018-07-31
 
 * Fix unexpected internal behavior change introduced in 4.4.5.
